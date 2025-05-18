@@ -1,0 +1,123 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+/* Google Fonts Import */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500&display=swap');
+
+/* Custom CSS Variables */
+:root {
+    /* Color System */
+    --color-primary-400: #818CF8; /* indigo-400 */
+    --color-primary-600: #4F46E5; /* indigo-600 */
+    --color-primary-800: #3730A3; /* indigo-800 */
+    
+    /* Neutral Colors */
+    --color-slate-50: #F8FAFC; /* slate-50 */
+    --color-white: #FFFFFF; /* white */
+    --color-slate-200: #E2E8F0; /* slate-200 */
+    --color-slate-900: #0F172A; /* slate-900 */
+    --color-slate-600: #475569; /* slate-600 */
+    --color-slate-400: #94A3B8; /* slate-400 */
+    
+    /* Semantic Colors */
+    --color-emerald-500: #10B981; /* emerald-500 */
+    --color-amber-500: #F59E0B; /* amber-500 */
+    --color-rose-500: #F43F5E; /* rose-500 */
+    --color-sky-500: #0EA5E9; /* sky-500 */
+    
+    /* Border Radius */
+    --border-radius: 0.5rem;
+}
+
+/* Custom Animation Classes */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes fadeOut {
+    from { opacity: 1; }
+    to { opacity: 0; }
+}
+
+@keyframes slideInRight {
+    from { transform: translateX(100%); }
+    to { transform: translateX(0); }
+}
+
+@keyframes slideInLeft {
+    from { transform: translateX(-100%); }
+    to { transform: translateX(0); }
+}
+
+@keyframes scaleIn {
+    from {
+        transform: scale(0.8);
+        opacity: 0;
+    }
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+.animate-fade-in {
+    animation: fadeIn 0.3s ease-in-out;
+}
+
+.animate-fade-out {
+    animation: fadeOut 0.3s ease-in-out;
+}
+
+.animate-slide-in-right {
+    animation: slideInRight 0.4s ease-out;
+}
+
+.animate-slide-in-left {
+    animation: slideInLeft 0.4s ease-out;
+}
+
+.animate-scale-in {
+    animation: scaleIn 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+/* Custom Component Classes */
+@layer components {
+    .btn {
+        @apply inline-flex items-center justify-center rounded-md font-medium transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary-600 focus-visible:ring-offset-2 disabled:opacity-50 disabled:pointer-events-none;
+    }
+
+    .btn-primary {
+        @apply bg-primary-600 text-white hover:bg-primary-800 px-4 py-2;
+    }
+
+    .btn-secondary {
+        @apply bg-slate-200 text-slate-900 hover:bg-slate-300 px-4 py-2;
+    }
+
+    .btn-outline {
+        @apply border border-primary-600 text-primary-600 hover:bg-primary-600 hover:text-white px-4 py-2;
+    }
+
+    .btn-ghost {
+        @apply text-slate-600 hover:bg-slate-200 hover:text-slate-900 px-4 py-2;
+    }
+
+    .btn-link {
+        @apply text-primary-600 hover:underline p-0 h-auto;
+    }
+
+    .btn-icon {
+        @apply p-2 rounded-full;
+    }
+
+    .input-base {
+        @apply w-full rounded-md border border-slate-200 bg-white px-3 py-2 text-slate-900 placeholder:text-slate-400 focus:outline-none focus:ring-2 focus:ring-primary-600 focus:border-primary-600 disabled:opacity-50 disabled:bg-slate-50;
+    }
+
+    .card {
+        @apply bg-white rounded-lg border border-slate-200 shadow-sm overflow-hidden;
+    }
+}
