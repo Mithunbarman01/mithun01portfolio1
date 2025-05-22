@@ -30,7 +30,8 @@
   "scripts": {
     "start": "vite",
     "build": "vite build --sourcemap",
-    "serve": "vite preview"
+    "serve": "vite preview",
+     "dev": "node index.js"
   },
   "eslintConfig": {
     "extends": [

@@ -42,7 +42,7 @@ const HeroSection = () => {
               variant="primary" 
               size="large" 
               icon="FileText" 
-              className=" text-primary-600 hover:bg-blue-700 border-white"
+              className=" text-primary-600 hover:bg-blue-700 border border-white"
             >
               View Resume
             </Button>

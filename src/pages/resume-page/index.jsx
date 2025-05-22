@@ -426,20 +426,20 @@ const resumeData = {
       codeUrl: "https://github.com/example/project"
     },
     {
-      title: "Weather Dashboard",
-      description: "Real-time weather information with forecasts, maps, and location-based services.",
-      image: "https://images.unsplash.com/photo-1504608524841-42fe6f032b4b?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=60",
-      technologies: ["JavaScript", "OpenWeather API", "Chart.js"],
-      demoUrl: "https://example.com/demo",
-      codeUrl: "https://github.com/example/project"
+      title: "Hostel webapp",
+      description: "this website  is used for hostels To promote in theirs areas ",
+      image: "https://unsplash.com/photos/the-roof-of-a-building-with-a-number-on-it-2fpLRf6fJ8o",
+      technologies: ["React", "tailwind css", "typescript"],
+      demoUrl: "https://webapp-amber-iota.vercel.app/",
+      codeUrl: "https://github.com/Mithunbarman01/webapp"
     },
     {
       title: "Portfolio Website",
       description: "Personal portfolio website showcasing projects and skills with a modern design.",
       image: "https://images.unsplash.com/photo-1517694712202-14dd9538aa97?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=60",
-      technologies: ["React", "Tailwind CSS", "Framer Motion"],
-      demoUrl: "https://example.com/demo",
-      codeUrl: "https://github.com/example/project"
+      technologies: ["React", "Tailwind CSS", "Next js" ,"JavaScript"],
+      demoUrl: "https://myportfolio-azure-seven.vercel.app/",
+      codeUrl: "https://github.com/Mithunbarman01/mithun01portfolio1"
     }
   ],
   certifications: [
